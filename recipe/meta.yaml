@@ -1,4 +1,4 @@
-{% set version = '2.3-14' %}
+{% set version = '2.3-13' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/flexmix_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/flexmix/flexmix_{{ version }}.tar.gz
-  sha256: 837c7f175a211b3c484b2c7b81ec9729889a614c5c6e7d70c95a2c1d60ff846a
+  sha256: 7fbcaf1610eb37673037e00a25c6b826c02a18e8df6886df11bacf39b82f40c4
 
 build:
   number: 0
@@ -49,6 +49,8 @@ about:
     implement mixtures of standard linear models, generalized linear models and model-based
     clustering.
   license_family: GPL3
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
+  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
 
 extra:
   recipe-maintainers:
