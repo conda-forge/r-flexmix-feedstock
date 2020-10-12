@@ -3,13 +3,11 @@ About r-flexmix
 
 Home: https://CRAN.R-project.org/package=flexmix
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-flexmix-feedstock/blob/master/LICENSE.txt)
 
 Summary: A general framework for finite mixtures of regression models using the EM algorithm is implemented. The E-step and all data handling are provided, while the M-step can be supplied by the user to easily define new models. Existing drivers implement mixtures of standard linear models, generalized linear models and model-based clustering.
-
-
 
 Current build status
 ====================
