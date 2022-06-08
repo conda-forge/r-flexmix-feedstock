@@ -1,4 +1,4 @@
-{% set version = "2.3-17" %}
+{% set version = "2.3-18" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/flexmix_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/flexmix/flexmix_{{ version }}.tar.gz
-  sha256: 36019b7833032409ac61720dd625fa5a581a1d8bcba9045b04979c90907b5649
+  sha256: 462201ef49088845c83083e4ed6725cf069aafb12a814041618aaf09ebd69b51
 
 build:
   merge_build_host: true  # [win]
