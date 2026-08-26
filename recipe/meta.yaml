@@ -1,4 +1,4 @@
-{% set version = "2.3-20" %}
+{% set version = "2.3-21" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/flexmix_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/flexmix/flexmix_{{ version }}.tar.gz
-  sha256: 4198437d875fbabbfa52e23612e617448638171b0a3880b798bce985e20726e8
+  sha256: 17428315f1cdb9d0b9e785c2557f77f1ab49b545c70c3770f85e5fef8b4163e6
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,8 +40,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=flexmix
   license: GPL-2.0-or-later
-  summary: A general framework for finite mixtures of regression models using the EM algorithm is implemented. The E-step and all data handling are provided, while the M-step can be supplied by the user to easily define new models. Existing drivers implement mixtures of standard linear models, generalized linear models and
-    model-based clustering.
+  summary: A general framework for finite mixtures of regression models using the EM algorithm is implemented. The E-step and all data handling are provided, while the M-step can be supplied by the user to easily define new models. Existing drivers implement mixtures of standard linear models, generalized linear models
+    and model-based clustering.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
